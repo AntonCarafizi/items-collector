@@ -1,0 +1,26 @@
+body { font-family: Courier; font-size: 18px; }
+input, select, button { display: table-row; font-family: Courier; font-size: 18px; box-sizing: border-box; padding: 10px 10px; margin: 10px 0px 10px 0px; }
+input[name="url"] { width: 100%; }
+form { display: table; width: 700px; margin: 0px auto; border: 1px solid #ccc; padding: 10px 20px; }
+label { display: table; }
+
+#progress {
+  display: none;
+  text-align: center;
+  box-sizing: border-box;
+  width: 740px; 
+  margin: 0px auto;
+  background-color: grey;
+}
+
+#bar {
+  width: 1%;
+  height: 30px;
+  color: #fff;
+  padding: 5px 10px;
+  box-sizing: border-box;
+  background-color: green;
+}
+
+#percent { position: absolute; }
+#status { display: none; padding: 10px 10px; }

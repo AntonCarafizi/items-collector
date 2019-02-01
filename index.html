@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/style.css">
+    <!--script type="text/javascript" src="js/jquery.min.js"></script-->
+    <title>Web Scraper</title>
+  </head>
+  <body>
+    <h1>Web scraper</h1>
+<form action="" method="get" autocomplete="on">
+  <fieldset>
+    <legend>Listing</legend>
+  <label for="url">URL</label>
+  <input type="text" name="url" id="url" value="" placeholder="URL" /><br>
+  <label for="page_from">Page from
+  <input type="text" name="page_from" id="page_from" value="0" placeholder="Page from"></label>
+  <label for="page_to">Page to
+  <input type="text" name="page_to" id="page_to" value="60" placeholder="Page to"></label>
+  <label for="offset">Offset
+  <input type="text" name="offset" id="offset" value="15" placeholder="Offset"></label>
+  <label for="selector">Selector</label>
+<select id="selector">
+  <option name="selector" value=".">Class</option>
+  <option name="selector" value="#">ID</option>
+</select> = <input type="text" name="val" id="val" value="hotel_name_link" placeholder="Attribute value" autocomplete="on" /><br>
+</fieldset>
+<fieldset>
+  <legend>Items</legend>
+  <label for="selector">Selector</label>
+<select id="selector">
+  <option name="selector" value=".">Class</option>
+  <option name="selector" value="#">ID</option>
+</select> = <input type="text" name="val" id="val" value="hotel_name_link" placeholder="Attribute value" autocomplete="on" />
+</fieldset>
+<button type="button" id="parse">Parse</button>  <div id="status"><span>Creating links list...</span></div>
+</form><br>
+<div id="progress">
+  <div id="bar"></div>
+  <span id="percent"></span>
+</div>
+<script type="text/javascript" src="js/functions.js"></script>
+  </body>
+</html>
